@@ -49,11 +49,11 @@ namespace Gerenciador_de_Senhas_2._0
         public static bool ValidaSenha(string senha)
         {
 
-            if (senha == "36372512")
+            if (senha == "senha")
             {
                 return true;
             }
-            MessageBox.Show("Senha Invalida !", "Menssagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Senha Invalida !", "Ops...", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return false;
 
         }
@@ -83,7 +83,7 @@ namespace Gerenciador_de_Senhas_2._0
                     ToolStripLogin.Visible = false;
                     ToolStripLogout.Visible = true;
 
-                    MessageBox.Show("Bem Vindo !", "Menssagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Bem Vindo !", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }
