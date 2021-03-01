@@ -29,6 +29,7 @@ namespace Gerenciador_de_Senhas_2._0
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripCriarSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripConsultarSenha = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +41,7 @@ namespace Gerenciador_de_Senhas_2._0
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Gold;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripCriarSenha,
             this.ToolStripConsultarSenha,
@@ -57,6 +59,7 @@ namespace Gerenciador_de_Senhas_2._0
             this.toolStripCriarSenha.Name = "toolStripCriarSenha";
             this.toolStripCriarSenha.Size = new System.Drawing.Size(87, 21);
             this.toolStripCriarSenha.Text = "Criar Senha";
+            this.toolStripCriarSenha.Click += new System.EventHandler(this.toolStripCriarSenha_Click);
             // 
             // ToolStripConsultarSenha
             // 
@@ -64,6 +67,7 @@ namespace Gerenciador_de_Senhas_2._0
             this.ToolStripConsultarSenha.Name = "ToolStripConsultarSenha";
             this.ToolStripConsultarSenha.Size = new System.Drawing.Size(114, 21);
             this.ToolStripConsultarSenha.Text = "Consultar Senha";
+            this.ToolStripConsultarSenha.Click += new System.EventHandler(this.ToolStripConsultarSenha_Click);
             // 
             // ToolStripLogin
             // 
@@ -79,6 +83,7 @@ namespace Gerenciador_de_Senhas_2._0
             this.ToolStripLogout.Name = "ToolStripLogout";
             this.ToolStripLogout.Size = new System.Drawing.Size(42, 21);
             this.ToolStripLogout.Text = "Sair";
+            this.ToolStripLogout.Click += new System.EventHandler(this.ToolStripLogout_Click);
             // 
             // Painel
             // 
@@ -95,6 +100,7 @@ namespace Gerenciador_de_Senhas_2._0
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Painel);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

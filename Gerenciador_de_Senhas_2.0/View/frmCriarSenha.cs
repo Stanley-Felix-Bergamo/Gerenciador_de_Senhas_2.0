@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace Gerenciador_de_Senhas_2._0.View
 {
-    public partial class frmLogar : Form
+    public partial class frmCriarSenha : Form
     {
-        public string Senha;
-        public frmLogar()
+        public frmCriarSenha()
         {
             InitializeComponent();
         }
-
-        private void btnEntrar_Click(object sender, EventArgs e)
-        {           
-            DialogResult = DialogResult.OK;
-            Senha = txtSenha.Text;            
-        }
-
-    
     }
 }

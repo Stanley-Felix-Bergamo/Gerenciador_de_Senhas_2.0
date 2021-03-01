@@ -87,5 +87,25 @@ namespace Gerenciador_de_Senhas_2._0
                 }
             }
         }
+
+        private void ToolStripLogout_Click(object sender, EventArgs e)
+        {
+            toolStripCriarSenha.Visible = false;
+            ToolStripConsultarSenha.Visible = false;
+            ToolStripLogin.Visible = true;
+            ToolStripLogout.Visible = false;
+        }
+
+        private void toolStripCriarSenha_Click(object sender, EventArgs e)
+        {
+            var x = new frmCriarSenha();
+            LoadForm(x, Painel);
+        }
+
+        private void ToolStripConsultarSenha_Click(object sender, EventArgs e)
+        {
+            var x = new frmConsultarSenha();
+            LoadForm(x, Painel);
+        }
     }
 }

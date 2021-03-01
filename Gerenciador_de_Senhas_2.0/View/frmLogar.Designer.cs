@@ -37,7 +37,7 @@ namespace Gerenciador_de_Senhas_2._0.View
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 93);
+            this.label1.Location = new System.Drawing.Point(53, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -45,7 +45,7 @@ namespace Gerenciador_de_Senhas_2._0.View
             // 
             // btnEntrar
             // 
-            this.btnEntrar.Location = new System.Drawing.Point(136, 177);
+            this.btnEntrar.Location = new System.Drawing.Point(170, 158);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(87, 23);
             this.btnEntrar.TabIndex = 1;
@@ -55,22 +55,23 @@ namespace Gerenciador_de_Senhas_2._0.View
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(107, 93);
+            this.txtSenha.Location = new System.Drawing.Point(121, 110);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(185, 20);
-            this.txtSenha.TabIndex = 2;
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(196, 20);
+            this.txtSenha.TabIndex = 0;
             // 
             // frmLogar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 248);
+            this.ClientSize = new System.Drawing.Size(441, 293);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogar";
             this.ResumeLayout(false);
             this.PerformLayout();
 
