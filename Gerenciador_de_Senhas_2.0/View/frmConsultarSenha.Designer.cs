@@ -35,6 +35,7 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.apagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Grid = new System.Windows.Forms.DataGridView();
+            this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             this.SuspendLayout();
@@ -45,32 +46,35 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Right;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.voltarToolStripMenuItem,
-            this.apagarToolStripMenuItem,
-            this.editarToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(767, 0);
+            this.copiarToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.apagarToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(704, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(63, 528);
+            this.menuStrip1.Size = new System.Drawing.Size(126, 528);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // voltarToolStripMenuItem
             // 
             this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(50, 19);
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
             this.voltarToolStripMenuItem.Text = "Voltar";
             this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
             // apagarToolStripMenuItem
             // 
             this.apagarToolStripMenuItem.Name = "apagarToolStripMenuItem";
-            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(50, 19);
+            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
             this.apagarToolStripMenuItem.Text = "Apagar";
+            this.apagarToolStripMenuItem.Click += new System.EventHandler(this.apagarToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(50, 19);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
             this.editarToolStripMenuItem.Text = "Editar";
+            this.editarToolStripMenuItem.Click += new System.EventHandler(this.editarToolStripMenuItem_Click);
             // 
             // Grid
             // 
@@ -78,8 +82,15 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.Grid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grid.Location = new System.Drawing.Point(0, 0);
             this.Grid.Name = "Grid";
-            this.Grid.Size = new System.Drawing.Size(767, 528);
+            this.Grid.Size = new System.Drawing.Size(704, 528);
             this.Grid.TabIndex = 2;
+            // 
+            // copiarToolStripMenuItem
+            // 
+            this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
+            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(113, 19);
+            this.copiarToolStripMenuItem.Text = "Copiar";
+            this.copiarToolStripMenuItem.Click += new System.EventHandler(this.copiarToolStripMenuItem_Click);
             // 
             // frmConsultarSenha
             // 
@@ -91,6 +102,7 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultarSenha";
+            this.Shown += new System.EventHandler(this.frmConsultarSenha_Shown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
@@ -106,5 +118,6 @@ namespace Gerenciador_de_Senhas_2._0.View
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
         private System.Windows.Forms.DataGridView Grid;
         private System.Windows.Forms.ToolStripMenuItem voltarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
     }
 }

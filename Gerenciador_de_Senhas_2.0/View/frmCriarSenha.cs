@@ -1,5 +1,6 @@
 ﻿using Gerenciador_de_Senhas_2._0.Controller;
 using Gerenciador_de_Senhas_2._0.Model;
+using Gerenciador_de_Senhas_2._0.Model.View;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace Gerenciador_de_Senhas_2._0.View
     {
         private UsuarioController controller = new UsuarioController();
         private Usuario Usuario = new Usuario();
+
         public frmCriarSenha()
         {
             InitializeComponent();

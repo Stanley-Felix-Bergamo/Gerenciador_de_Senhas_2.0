@@ -90,11 +90,23 @@
     <Compile Include="View\frmCriarSenha.Designer.cs">
       <DependentUpon>frmCriarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmEditando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmEditando.Designer.cs">
+      <DependentUpon>frmEditando.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmLogar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frmLogar.Designer.cs">
       <DependentUpon>frmLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPergunta.Designer.cs">
+      <DependentUpon>frmPergunta.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Menu.cs">
       <SubType>Form</SubType>
@@ -119,8 +131,14 @@
     <EmbeddedResource Include="View\frmCriarSenha.resx">
       <DependentUpon>frmCriarSenha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmEditando.resx">
+      <DependentUpon>frmEditando.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmLogar.resx">
       <DependentUpon>frmLogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPergunta.resx">
+      <DependentUpon>frmPergunta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
