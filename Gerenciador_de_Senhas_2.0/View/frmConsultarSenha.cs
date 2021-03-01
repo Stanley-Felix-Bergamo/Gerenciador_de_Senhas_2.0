@@ -16,5 +16,10 @@ namespace Gerenciador_de_Senhas_2._0.View
         {
             InitializeComponent();
         }
+
+        private void voltarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

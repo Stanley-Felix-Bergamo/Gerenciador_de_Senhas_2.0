@@ -30,7 +30,7 @@ namespace Gerenciador_de_Senhas_2._0.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCriarSenha));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
@@ -41,14 +41,15 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnSalvar
             // 
-            this.button1.Location = new System.Drawing.Point(182, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 29);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Salvar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalvar.Location = new System.Drawing.Point(182, 193);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(104, 29);
+            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // label1
             // 
@@ -82,28 +83,28 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.txtSite.Location = new System.Drawing.Point(90, 14);
             this.txtSite.Name = "txtSite";
             this.txtSite.Size = new System.Drawing.Size(323, 20);
-            this.txtSite.TabIndex = 4;
+            this.txtSite.TabIndex = 0;
             // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(90, 122);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(323, 20);
-            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabIndex = 2;
             // 
             // txtLogin
             // 
             this.txtLogin.Location = new System.Drawing.Point(90, 69);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(323, 20);
-            this.txtLogin.TabIndex = 6;
+            this.txtLogin.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.txtSite);
             this.panel1.Controls.Add(this.txtLogin);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnSalvar);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblLogin);
@@ -129,7 +130,7 @@ namespace Gerenciador_de_Senhas_2._0.View
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenha;

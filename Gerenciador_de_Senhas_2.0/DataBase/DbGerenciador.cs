@@ -10,7 +10,7 @@ namespace Gerenciador_de_Senhas_2._0.DataBase
 {
     public class DbGerenciador : DbContext
     {
-        public DbGerenciador() : base("Gerencidor_De_Senhas_2.0") { }
+        public DbGerenciador() : base("GerenciadorSenha2.0") { }
 
 
         public DbSet<Usuario> usuarios { get; set; }

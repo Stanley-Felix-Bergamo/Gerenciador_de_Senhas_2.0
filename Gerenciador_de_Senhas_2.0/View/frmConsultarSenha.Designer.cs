@@ -31,10 +31,10 @@ namespace Gerenciador_de_Senhas_2._0.View
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultarSenha));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.apagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Grid = new System.Windows.Forms.DataGridView();
-            this.voltarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,13 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.menuStrip1.Size = new System.Drawing.Size(63, 528);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // voltarToolStripMenuItem
+            // 
+            this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
+            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(50, 19);
+            this.voltarToolStripMenuItem.Text = "Voltar";
+            this.voltarToolStripMenuItem.Click += new System.EventHandler(this.voltarToolStripMenuItem_Click);
             // 
             // apagarToolStripMenuItem
             // 
@@ -73,12 +80,6 @@ namespace Gerenciador_de_Senhas_2._0.View
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(767, 528);
             this.Grid.TabIndex = 2;
-            // 
-            // voltarToolStripMenuItem
-            // 
-            this.voltarToolStripMenuItem.Name = "voltarToolStripMenuItem";
-            this.voltarToolStripMenuItem.Size = new System.Drawing.Size(50, 19);
-            this.voltarToolStripMenuItem.Text = "Voltar";
             // 
             // frmConsultarSenha
             // 
