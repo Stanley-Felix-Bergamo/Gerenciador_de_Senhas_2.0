@@ -20,7 +20,6 @@ namespace Gerenciador_de_Senhas_2._0
             toolStripCriarSenha.Visible = false;
             ToolStripConsultarSenha.Visible = false;
             ToolStripLogin.Visible = true;
-            ToolStripLogout.Visible = false;
         }
         public static void LoadForm(Form frm, Panel pnl)//função para o botão funcionar//Carrega o Formulario
         {
@@ -81,19 +80,10 @@ namespace Gerenciador_de_Senhas_2._0
                     toolStripCriarSenha.Visible = true;
                     ToolStripConsultarSenha.Visible = true;
                     ToolStripLogin.Visible = false;
-                    ToolStripLogout.Visible = true;
 
                     MessageBox.Show("Bem Vindo !", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-        }
-
-        private void ToolStripLogout_Click(object sender, EventArgs e)
-        {
-            toolStripCriarSenha.Visible = false;
-            ToolStripConsultarSenha.Visible = false;
-            ToolStripLogin.Visible = true;
-            ToolStripLogout.Visible = false;
         }
 
         private void toolStripCriarSenha_Click(object sender, EventArgs e)

@@ -34,7 +34,6 @@ namespace Gerenciador_de_Senhas_2._0
             this.toolStripCriarSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripConsultarSenha = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripLogin = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.Painel = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -45,8 +44,7 @@ namespace Gerenciador_de_Senhas_2._0
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripCriarSenha,
             this.ToolStripConsultarSenha,
-            this.ToolStripLogin,
-            this.ToolStripLogout});
+            this.ToolStripLogin});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -76,14 +74,6 @@ namespace Gerenciador_de_Senhas_2._0
             this.ToolStripLogin.Size = new System.Drawing.Size(72, 21);
             this.ToolStripLogin.Text = "Conectar";
             this.ToolStripLogin.Click += new System.EventHandler(this.ToolStripLogin_Click);
-            // 
-            // ToolStripLogout
-            // 
-            this.ToolStripLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.ToolStripLogout.Name = "ToolStripLogout";
-            this.ToolStripLogout.Size = new System.Drawing.Size(42, 21);
-            this.ToolStripLogout.Text = "Sair";
-            this.ToolStripLogout.Click += new System.EventHandler(this.ToolStripLogout_Click);
             // 
             // Painel
             // 
@@ -117,7 +107,6 @@ namespace Gerenciador_de_Senhas_2._0
         private System.Windows.Forms.ToolStripMenuItem toolStripCriarSenha;
         private System.Windows.Forms.ToolStripMenuItem ToolStripConsultarSenha;
         private System.Windows.Forms.ToolStripMenuItem ToolStripLogin;
-        private System.Windows.Forms.ToolStripMenuItem ToolStripLogout;
         private System.Windows.Forms.Panel Painel;
     }
 }
